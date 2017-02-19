@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/invie.css">
 </head>
 <body>
-	<header id="header" class = "header">
+	<header id="header" class = "header contenedor">
 		<figure class="logotipo">
 			<img src="images/invie.png" width="185" height="60" alt="invie guitarras"> <!--logotipo -->
 		</figure>
@@ -27,43 +27,67 @@
 		</nav>
 	</header>
 	<section id="portada" class="portada"> <!-- portada -->
-		<h1 class="titulo">Guitarras invisibles</h1> <!--titulo-->
-		<h3 class = "title-a">Super Slogan!!</h3><!--slogan-->
-		<button>Ver maś</button><!--boton-->
+		<div class ="contenedor">
+			<h1 class="titulo">Guitarras invisibles</h1> <!--titulo-->
+			<h3 class = "title-a">Super Slogan!!</h3><!--slogan-->
+			<button>Ver maś</button><!--boton-->
+		</div>
 	</section>
-	<section id="guitarras" class="guitarras"><!-- guitarras -->
+	<section id="guitarras" class="guitarras contenedor"><!-- guitarras -->
 	<h2>Nuestras Guitarras</h2>
-	<article>
-		<img src="images/invie-acustica.png" width="200" alt="guitarra acustica">
-		<h3 class = "title-a">Invie Acústica</h3>
-		<ol>
-			<li>
-				Estilo Vintage
-			</li>
-			<li>
-				Madera Pura
-			</li>
-			<li>
-				Incluye estuche invisible de aluminio
-			</li>
-		</ol>
+	<article class="guitarra">
+		<img class="derecha" src="images/invie-acustica.png" width="350" alt="guitarra acustica">
+		
+		<div class="contenedor-guitarra-a">
+			<h3 class = "title-a">Invie Acústica</h3>
+			<ol>
+				<li>
+					Estilo Vintage
+				</li>
+				<li>
+					Madera Pura
+				</li>
+				<li>
+					Incluye estuche invisible de aluminio
+				</li>
+			</ol>
+		</div>
 	</article>
-	<article>
-		<img src="images/invie-classic.png" width="200" alt="Guitaara clasica">
-		<h3 class = "title-a">Invie Classic</h3>
-		<ol>
-			<li>
-				Estilo Clásico
-			</li>
-			<li>
-				Madera impura
-			</li>
-			<li>
-				Incluye estuche invisible de madera
-			</li>
-		</ol>
+	<article class="guitarra">
+		<img class="izquierda" src="images/invie-classic.png" width="400" alt="Guitaara clasica">
+		
+		<div class="contenedor-guitarrra-b">
+			<h3 class = "title-a">Invie Classic</h3>
+			<ol>
+				<li>
+					Estilo Clásico
+				</li>
+				<li>
+					Madera impura
+				</li>
+				<li>
+					Incluye estuche invisible de madera
+				</li>
+			</ol>
+		</div>
 	</article>
-	
 	</section>
+
+
+	<footer class="footer">
+		<div class="contenedor">
+			<div class = "contacto">
+				<img src="images/invie-white.png" alt="logotipo blanco">
+				<a href="tel:+573003073164"><strong>Teléfono</strong><span>300 255 6585</span></a>
+				<a href="mailto:ontacto@invie.com"><strong>E-mail</strong><span>contacto@invie.com</span></a>
+			</div>
+			<form class = formulario>
+				<label for="nombre">Nombre</label>
+				<input type="text" required id="nombre">
+			</form>
+		</div>
+	</footer>
+
+
 </body>
 </html>
